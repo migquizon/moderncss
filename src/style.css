@@ -1,0 +1,16 @@
+@import "fonts.css";
+@layer red, black, fonts;
+
+@layer red {
+    h1, h2, a {
+        color: red;
+    }
+}
+
+@layer black {
+    h1, h2, a {
+        color: goldenrod;
+        font-family: Figtree;
+        font-weight: 300;
+    }
+}

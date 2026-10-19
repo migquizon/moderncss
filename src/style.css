@@ -14,3 +14,39 @@
         font-weight: 300;
     }
 }
+
+.grid-area {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "one one one three"
+    "four . . two";
+}
+
+.item {
+  padding: 1rem;
+}
+
+.one {
+  background: #ffd1dc;
+  grid-area: one;
+}
+
+.two {
+  background: #aec6cf;
+  grid-area: two;
+}
+
+.three {
+  background: #e6b8f5;
+  grid-area: three;
+}
+
+.four {
+  background: #b5ead7;
+  grid-area: four;
+}
+
+.five {
+  background: #ffccb6;
+}

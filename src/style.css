@@ -1,52 +1,5 @@
-@import "fonts.css";
-@layer red, black, fonts;
-
-@layer red {
-    h1, h2, a {
-        color: red;
-    }
-}
-
-@layer black {
-    h1, h2, a {
-        color: goldenrod;
-        font-family: Figtree;
-        font-weight: 300;
-    }
-}
-
-.grid-area {
-  display: grid;
-  gap: 1rem;
-  grid-template-areas:
-    "one one one three"
-    "four . . two";
-}
-
-.item {
-  padding: 1rem;
-}
-
-.one {
-  background: #ffd1dc;
-  grid-area: one;
-}
-
-.two {
-  background: #aec6cf;
-  grid-area: two;
-}
-
-.three {
-  background: #e6b8f5;
-  grid-area: three;
-}
-
-.four {
-  background: #b5ead7;
-  grid-area: four;
-}
-
-.five {
-  background: #ffccb6;
-}
+/*@import "/src/flex.css";*/
+@import "/src/fonts.css";
+/*@import "/src/nav.css";*/
+@import "/src/flex-vs-grid.css";
+/*@import "/src/grid.css";*/

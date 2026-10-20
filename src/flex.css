@@ -1,0 +1,43 @@
+.flex {
+  border: 10px solid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.item {
+  padding: 1rem;
+}
+
+/* general styling  */
+
+.one {
+  background: #ffd1dc;
+}
+
+.two {
+  background: #aec6cf;
+}
+
+.three {
+  background: #e6b8f5;
+}
+
+.four {
+  background: #b5ead7;
+}
+
+.five {
+  background: #ffccb6;
+}
+
+body {
+  margin: 100px;
+  font-size: 1.25rem;
+  font-family: system-ui;
+}
+
+h1 {
+  text-align: center;
+}

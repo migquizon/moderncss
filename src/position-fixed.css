@@ -1,0 +1,64 @@
+header {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+
+/* general styling */
+
+:root {
+  --clr-primary: #ee6352;
+  --clr-body: #333;
+  --clr-bg: #ddd;
+}
+
+header {
+  padding: 2em;
+  background: #fff;
+  box-shadow: 0 0 1rem rgb(0 0 0 / .25);
+}
+
+.nav__list a {
+  color: var(--clr-primary);
+}
+
+.nav__list a:hover,
+.nav__list a:focus {
+  color: var(--clr-body);
+}
+
+
+.logo {
+  font-weight: 700;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  gap: 1rem;
+}
+
+body {
+  font-family: basic-sans, sans-serif;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-bg);
+  min-height: 100vh;
+}
+
+main {
+  max-inline-size: 65ch;
+  padding-inline: 2rem;
+  margin-inline:  auto;
+}
+
+.page-header {
+    position: fixed;
+    inset: 0 10px 20px  100px;
+}
+

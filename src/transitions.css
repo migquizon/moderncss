@@ -1,0 +1,15 @@
+body {
+  margin: 100px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: #3DCCC7;
+  transition: 1s;
+}
+
+.box:hover {
+  background: #FF6B6B;
+  rotate: 45deg;
+}

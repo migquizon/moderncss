@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Input Focus</title>
+<link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <form class="contact-form">
+      <div class="form-group"> 
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Kevin">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="hi@kevinpowell.co" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input pattern="^(?=.*[A-Za-z])(?=.*\d).+$" type="password" placeholder="12+ characters" id="password" minlength="12" required>
+      </div>
+    
+      <fieldset>
+        <legend>Email frequency preference</legend> 
+    
+        <input type="radio" id="daily" name="email-frequency" value="daily" required>
+        <label for="daily">Daily</label>
+    
+        <input type="radio" id="weekly" name="email-frequency" value="weekly">
+        <label for="weekly">Weekly</label>
+    
+        <input type="radio" id="monthly" name="email-frequency" value="monthly">
+        <label for="monthly">Monthly</label>
+      </fieldset>
+    
+      <label>
+        <input type="checkbox" class="checkbox" required> I agree to the terms and services
+      </label>
+      <button>Submit</button>
+    </form>
+    
+    <!-- pattern="^(?=.*[A-Za-z])(?=.*\d).+$"-->
+<script type="module" src="/src/index.js"></script>
+</body>
+
+</html>

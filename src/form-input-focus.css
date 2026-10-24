@@ -1,0 +1,108 @@
+.contact-form {
+  input {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 0;
+    background: var(--clr-primary-100);
+  }
+  
+  input:not([type="checkbox"], [type="radio"]):user-valid {
+    outline: 3px solid var(--clr-success);
+  }
+  
+  input:not([type="checkbox"], [type="radio"]):user-invalid {
+    outline: 3px solid var(--clr-error);
+  }
+
+  input:focus-visible {
+    outline: 3px solid var(--clr-warning);
+    outline-offset: 6px;
+  }
+
+  fieldset {
+    border: 1px solid var(--clr-primary-100);
+  }
+  
+  fieldset:focus-within {
+    border-color: var(--clr-warning);
+  }
+  
+  fieldset:has([type="radio"]:valid) {
+    border-color: var(--clr-success)
+  }
+  
+  .form-group:has([required]) label::after {
+    content: " *" / "required";
+    color: var(--clr-error);
+  }
+}
+
+body {
+  accent-color: white;
+  font-size: 1.5rem;
+}
+
+
+/* general styling */
+
+:root {
+  --clr-success: hsl(143, 100%, 26%);
+  --clr-warning: hsl(43, 100%, 66%);
+  --clr-error: hsl(348, 55%, 49%);
+
+  --clr-primary-000: hsl(249, 33%, 4%);
+  --clr-primary-100: hsl(249, 33%, 8%);
+  --clr-primary-200: hsl(249, 33%, 12%);
+  --clr-primary-300: hsl(251, 22%, 24%);
+  --clr-primary-400: hsl(251, 22%, 36%);
+}
+
+html {
+  font-family: "IBM Plex Sans", sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  font-size: 1rem;
+  background-color: var(--clr-primary-100);
+}
+
+label,
+legend {
+  font-size: 1.5rem;
+}
+
+.contact-form {
+  padding: 2rem;
+  border: 2px solid transparent;
+  background: var(--clr-primary-300);
+  border-radius: 1rem;
+  display: grid;
+  gap: 1lh;
+  max-width: 30ch;
+  margin: 2rem auto;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.25rem;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 3px solid transparent;
+  color: white;
+  background: var(--clr-primary-100);
+}
+
+button:hover,
+button:focus-visible {
+  background: white;
+  color: var(--clr-primary-100);
+}

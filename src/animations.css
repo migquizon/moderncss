@@ -1,0 +1,27 @@
+.box {
+  inline-size: 50%;
+  aspect-ratio: 1;
+  background: black;
+  animation: color-shift 3s forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes color-shift {
+  0% {
+    background-color: purple;
+  }
+
+  25% {
+    background-color: orange;
+  }
+
+  50% {
+    background-color: dodgerblue;
+  }
+
+  100% {
+    background-color: cyan;
+  }
+}
+
